@@ -7,9 +7,13 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "HTTPConnector.h"
+#import "JSONParser.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITextFieldDelegate>
 
+-(void) translate; //Main application work
+-(void) getMemoryData:(NSString*) textFromSearchfield;//Get information about translation history
 
 @end
 
